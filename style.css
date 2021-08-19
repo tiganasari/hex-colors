@@ -1,0 +1,55 @@
+.container {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  /* border: 1px solid black; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex-colors {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.hex-colors h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: colorchange 5s infinite alternate;
+}
+
+.hex-colors h2 {
+  /* border: 1px solid black; */
+  font-size: 2rem;
+  margin-top: 15%;
+}
+
+@keyframes colorchange {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: red;
+  }
+  40% {
+    color: yellow;
+  }
+  60% {
+    color: blue;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: pink;
+  }
+}
+
+@media (max-width: 480px) {
+  .hex-colors h1 {
+    font-size: 1rem;
+  }
+  .hex-colors h2 {
+    font-size: 1rem;
+  }
+}
